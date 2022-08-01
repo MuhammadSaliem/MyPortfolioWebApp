@@ -28,7 +28,7 @@ namespace Web
             services.AddControllersWithViews();
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlServer(configration.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(configration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Infrastructure"));
             });
         }
 
