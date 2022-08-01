@@ -34,7 +34,7 @@ namespace Web
             {
                 endpoints.MapControllerRoute(
                     "defualtRoute",
-                    "{controller = Home}/{action = Index}/{id?}"
+                    "{controller=Home}/{action=Index}/{id?}"
                     );
             });
 
